@@ -8,3 +8,20 @@ third_number = int(input())
 smallest_element= smallest([first_number,second_number, third_number])
 
 print(smallest_element)
+
+
+----------------------------------------
+#2
+
+def find_smallest(a, b, c):
+    min_number = min(a, b, c)
+    return min_number
+
+# Input
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
+
+# Call the function and print the result
+smallest = find_smallest(a, b, c)
+print("The smallest number is:", smallest)
