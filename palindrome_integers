@@ -1,0 +1,24 @@
+def is_palindrome(some_numbers) -> bool:
+    return some_numbers == some_numbers[::-1]
+
+numbers_as_string = input().split(', ')
+for number_as_string in numbers_as_string:
+    print(is_palindrome(number_as_string))
+
+-------------------------------------------------
+
+def is_palindrome(number):
+    number_string = str(number)
+    return number_string == number_string[::-1]
+
+input_numbers = input()
+number_string_list = input_numbers.split(', ')
+number_list = []
+
+for num_str in number_string_list:
+    num = int(num_str)
+    number_list.append(num)
+
+for num in number_list:
+    result = is_palindrome(num)
+    print(f'{num}: {result}')
